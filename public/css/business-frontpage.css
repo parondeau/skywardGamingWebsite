@@ -2,23 +2,39 @@ body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
-/* change the URL to a picture of your choice - the higher quality the better! */
 .business-header {
 	height: 400px;
-	background: url(http://placehold.it/1920x400) center center no-repeat;
-	background-size: cover;
+	background: url(../images/onARollLogoBlack.png) center center no-repeat;
+	background-size: 400px;
+	background-color: black;
 }
-
-/* adjust the color and text shadow to optimize legibility once you have an image set - you can also change the vertical positioning if desired  */
-.tagline {
-	color: #fff;
-	text-shadow: 0 0 10px #000;
-}
-
 footer {
-	margin: 50px 0;
+	margin: 50px;
 }
 #gameSectionPicture{
 	margin: auto;
 }
-
+.container .noMarginTop {
+	margin-top: 0;
+}
+#descriptions {
+	text-align: center;
+}
+#descriptions > * {
+	display: inline-block;
+	cursor: pointer;
+}
+#descriptions > *:hover {
+	background: #333;
+	color: #aaa;
+	border-radius: 4px;
+}
+.mainBody > * {
+	display: none;
+}
+.show {
+	display: block;
+}
+.row {
+	margin: 0;
+}
