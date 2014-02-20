@@ -1,34 +1,77 @@
+function navigateHome(){
+	$(".mainBody > *").removeClass("show");
+	$(".mainSection").addClass("show");
+	window.location.href = '#home';
+}
+function navigateRules(){
+	$(".mainBody > *").removeClass("show");
+	$(".rulesSection").addClass("show");
+	window.location.href = '#rules';
+}
+function navigateOdds(){
+	$(".mainBody > *").removeClass("show");
+	$(".oddsSection").addClass("show");
+	window.location.href = '#odds';
+}
+function navigateHistory(){
+	$(".mainBody > *").removeClass("show");
+	$(".historySection").addClass("show");
+	window.location.href = '#history';
+}
+function navigateContact(){
+	$(".mainBody > *").removeClass("show");
+	$(".contactSection").addClass("show");
+	window.location.href = '#contact';
+}
+function checkURL(){
+	url = window.location.hash;
+	url = url.replace(/^\#/,'');
+	switch (url){
+		case 'rules':
+			navigateRules();
+			break;
+		case 'odds':
+			navigateOdds();
+			break;
+		case 'history':
+			navigateHistory();
+			break;
+		case 'contact':
+			navigateContact();
+			break;
+		default:
+			navigateHome();
+			break;
+	}
+}
+
 function onLoad(){
+	checkURL();
 	$("#navHome").on("click", function(){
-		$(".mainBody > *").removeClass("show");
-		$(".mainSection").addClass("show");
+		navigateHome();
 	});
-	$("#navGame").on("click", function(){
-		$(".mainBody > *").removeClass("show");
-		$(".gameSection").addClass("show");
+	$("#navRules").on("click", function(){
+		navigateRules();
+	});
+	$("#navOdds").on("click", function(){
+		navigateOdds();
 	});
 	$("#navStory").on("click", function(){
-		$(".mainBody > *").removeClass("show");
-		$(".historySection").addClass("show");
+		navigateHistory();
 	});
 	$("#navContact").on("click", function(){
-		$(".mainBody > *").removeClass("show");
-		$(".contactSection").addClass("show");
+		navigateContact();
 	});
 	$(".business-header").on("click", function(){
-		$(".mainSection").removeClass("show");
-		$(".gameSection").addClass("show");
+		navigateRules();
 	});
-	$("#mainGameSection").on("click", function(){
-		$(".mainSection").removeClass("show");
-		$(".gameSection").addClass("show");
+	$("#mainRulesSection").on("click", function(){
+		navigateRules();
+	});
+	$("#mainOddsSection").on("click", function(){
+		navigateOdds();
 	});
 	$("#mainHistorySection").on("click", function(){
-		$(".mainSection").removeClass("show");
-		$(".historySection").addClass("show");
-	});
-	$("#mainContactSection").on("click", function(){
-		$(".mainBody > *").removeClass("show");
-		$(".contactSection").addClass("show");
+		navigateHistory();
 	});
 }
