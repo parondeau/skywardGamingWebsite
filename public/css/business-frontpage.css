@@ -66,17 +66,19 @@ footer {
 }
 .nil {
 	color: rgb(186, 2, 2);
+	font-weight: 500;
 }
 .nothing {
 	color: mediumvioletred;
+	font-weight: 500;
 }
 .zilch {
-	font-weight: 500;
 	color: rgb(93, 0, 128);
+	font-weight: 500;
 }
-
-/* Rules Page */
-
-/* Odds Page */
-/* History Page */
-
+.table td:first-child {
+	width: 75%;
+}
+.table td {
+	white-space: normal !important;
+}

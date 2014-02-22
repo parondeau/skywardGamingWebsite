@@ -1,27 +1,31 @@
 function navigateHome(){
-	$(".mainBody > *").removeClass("show");
+	navExtras();
 	$(".mainSection").addClass("show");
 	window.location.href = '#home';
 }
 function navigateRules(){
-	$(".mainBody > *").removeClass("show");
+	navExtras();
 	$(".rulesSection").addClass("show");
 	window.location.href = '#rules';
 }
 function navigateOdds(){
-	$(".mainBody > *").removeClass("show");
+	navExtras();
 	$(".oddsSection").addClass("show");
 	window.location.href = '#odds';
 }
 function navigateHistory(){
-	$(".mainBody > *").removeClass("show");
+	navExtras();
 	$(".historySection").addClass("show");
 	window.location.href = '#history';
 }
 function navigateContact(){
-	$(".mainBody > *").removeClass("show");
+	navExtras();
 	$(".contactSection").addClass("show");
 	window.location.href = '#contact';
+}
+function navExtras(){
+	document.body.scrollTop = 0;
+	$(".mainBody > *").removeClass("show");
 }
 function checkURL(){
 	url = window.location.hash;
