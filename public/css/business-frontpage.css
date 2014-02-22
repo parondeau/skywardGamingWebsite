@@ -82,3 +82,18 @@ footer {
 .table td {
 	white-space: normal !important;
 }
+.note {
+	font-size: 14px;
+	font-style: italic;
+}
+.selfieContainer img {
+	float: left;
+	margin-right: 20px;
+	width: 250px;
+}
+#contactSection img {
+	width: 180px;
+}
+#contactSection {
+	padding-bottom: 0;
+}
