@@ -22,12 +22,12 @@
 </script>
   </head>
 
-  <body onload="onLoad()">
+  <body>
 
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -39,7 +39,8 @@
           <ul class="nav navbar-nav">
             <li><a id="navRules">The Rules</a></li>
             <li><a id="navOdds">The Odds</a></li>
-            <li><a id="navStory">My Story </a></li>
+            <li><a id="navStory">My Story</a></li>
+            <li><a id="navPlay">Where To Play</a></li>
             <li><a id="navContact">Contact</a></li>
           </ul>
         </div>
@@ -77,8 +78,11 @@
         </div>
       </div>
       <div id="rulesSection">
-        <h2>How To Play On A Roll</h2>
+        <h2>How To Play <span class="onarollHeader">On A Roll</span></h2>
         <div>
+          <div id="layoutImg">
+            <img src="images/layout.png">
+          </div>
           <div>
             <span class='onaroll'>On A Roll Dice Poker</span> is an exciting new poker game played with five dice that are numbered from one to six.
             Players compete against a pay table, not against the Dealer or other players.
@@ -100,10 +104,10 @@
             The <strong>Shooter</strong> is the player with control of the dice. This player may continue to shake the dice provided they wagered on the exact winning <strong>Dice Poker</strong> combination or until <span class="zilch">Zilch</span> is rolled and the <strong>5 Sixes Bonus Round</strong> is completed. Until a player elects to become the Shooter, the Dealer shakes the dice.
           </div>
         </div>
-        <h3><span class="onarollHeader">On A Roll Dice</span> Poker Rankings</h3>
+        <h3><span class="onarollHeader">On A Roll Dice Poker</span> Rankings</h3>
         <div>
           <div>
-            On A Roll Dice Poker hands are determined by what appears on the uppermost sides of the dice. Rankings include all 5 dice and are, in order of highest to lowest rank:
+            <span class="onaroll">On A Roll Dice Poker</span> hands are determined by what appears on the uppermost sides of the dice. Rankings include all 5 dice and are, in order of highest to lowest rank:
           </div>
           <br>
           <div>
@@ -140,7 +144,7 @@
         </div>
       </div>
       <div id="oddsSection">
-        <h3><span class="onarollHeader">On A Roll Dice</span> Poker Payouts</h3>
+        <h3><span class="onarollHeader">On A Roll Dice Poker</span> Payouts</h3>
         <div class="table-responsive">
           <table class="table table-hover">
             <thead>
@@ -229,7 +233,7 @@
             </tbody>
           </table>
         </div>
-        <p class="note">The Maximum Payout amount per hand is $250 000, which includes the Zilch &amp; 5 Sixes Bonus Round.</p>
+        <p class="note">The Maximum Payout amount per hand is $25 000, which includes the Zilch &amp; 5 Sixes Bonus Round.</p>
       </div>
       <div id="historySection">
         <h3>The Story of <span class="onarollHeader">On A Roll</span></h3>
@@ -254,6 +258,27 @@
           </div>
         </div>
       </div>
+      <div id="playSection">
+        <h3>Where To Play <span class="onarollHeader">On A Roll</span></h3>
+        <div>
+          <img src="images/casinoRama.jpg">
+          <p>Currently <span class="onaroll">On A Roll</span> is available to play at <strong>Casino Rama</strong>.</p>
+          <p><strong>Casino Rama</strong> is a large casino, hotel and entertainment complex located on the reserve land of Chippewas of Rama First Nation, in the town of Rama, Ontario, Canada.</p>
+          <address>
+            <strong>Casino Rama</strong>
+            <br>
+            5899 Rama Rd
+            <br>
+            Rama, Ontario
+            <br>
+            L3V 6H6
+            <br>
+            Phone: (705) 329 3325
+            <br>
+            <a href="http://www.casinorama.com">Casino Rama's Website</a>
+          </address>
+        </div>
+      </div>
       <div id="contactSection">
         <div class="selfieContainer">
           <img src="images/selfie.png">
@@ -263,25 +288,28 @@
           <br>
           1026 Manson Lane
           <br>
-          Severn Bridge
+          Severn Bridge, Ontario
           <br>
           P0E1N0
         </address>
         <address>
-          Office: (705) 689 6520
+          Phone: (705) 689 6520
           <br>
           Mobile: (705) 345 0561
           <br>
           Email: <a href="mailto:rondeau4@sympatico.ca">rondeau4@sympatico.ca</a>
         </address>
-    </div>
+        <div id="skywardSection">
+          <p><span class="onarollHeader">On A Roll Dice Poker</span> is owned by Skyward Gaming &copy;</p>
+        </div>
+      </div>
     </div>
 
     <hr>
     <footer>
       <div class="row">
         <div class="col-lg-12">
-          <p>Skyward Gaming &copy; 2014 &middot; Facebook &middot; Twitter &middot; Google+</p>
+          <p>Skyward Gaming &copy; 2014 &middot; Facebook</p>
         </div>
       </div>
     </footer>
