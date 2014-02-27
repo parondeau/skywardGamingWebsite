@@ -103,11 +103,11 @@ footer {
 	margin: 25px 0 10px 25px;
 }
 #skywardSection {
-	height: 270px;
-	background-image: url(../images/skywardLogo.png);
+	height: 290px;
+	background-image: url(../images/skywardLogo_2.png);
 	background-repeat: no-repeat;
 	background-size: 240px;
-	background-position: 0px 50px;
+	background-position: 0px 42px;
 }
 #playSection {
 	min-height: 410px;
@@ -117,4 +117,11 @@ footer {
 	width: 53%;
 	margin: 10px 10% 10px 25px;
 	max-width: 410px;
+}
+#contactSection .contactSelfieContainer {
+	display: inline-block;
+	margin: 0 10px 15px 0;
+}
+#contactSection address {
+	display: inline-block;
 }
