@@ -125,3 +125,8 @@ footer {
 #contactSection address {
 	display: inline-block;
 }
+.patent {
+	color: #999;
+	font-size: 9px;
+	margin-left: 5px;
+}
