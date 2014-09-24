@@ -13,9 +13,9 @@ strong {
 }
 .business-header {
 	height: 400px;
-	background: url(../images/onARollLogoBlack.png) center center no-repeat;
+	background: url(../images/onARollLogo_new_black.jpg) center center no-repeat;
 	background-size: 400px;
-	background-color: black;
+	background-color: rgb(32,32,32);
 	margin: -20px -20px 0;
 }
 footer {
