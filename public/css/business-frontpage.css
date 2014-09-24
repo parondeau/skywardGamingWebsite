@@ -1,6 +1,9 @@
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 	font-size: 16px;
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 42px; /* 7px more than footer b/c of <hr>*/
 }
 ul.nav {
 	font-size: 14px;
@@ -16,7 +19,16 @@ strong {
 	margin: -20px -20px 0;
 }
 footer {
-	margin: 0 50px 20px;
+	position: absolute;
+	bottom: 0;
+	height: 35px;
+	width: 100%;
+	margin-left: 5px;
+}
+hr {
+	position: absolute;
+	width: 99%;
+	bottom: 27px;
 }
 #ruleSectionPicture{
 	margin: auto;
@@ -94,9 +106,6 @@ footer {
 #contactSection img {
 	width: 180px;
 }
-#contactSection {
-	padding-bottom: 0;
-}
 #layoutImg img {
 	float: right;
 	width: 55%;
@@ -109,14 +118,14 @@ footer {
 	background-size: 240px;
 	background-position: 0px 42px;
 }
-#playSection {
-	min-height: 410px;
+#playSection p {
+	margin: 0 0 20px;
 }
 #playSection img {
-	float: right;
-	width: 53%;
-	margin: 10px 10% 10px 25px;
+	width: 60%;
+	margin: 0 auto;
 	max-width: 410px;
+	display: block;
 }
 #contactSection .contactSelfieContainer {
 	display: inline-block;
@@ -129,4 +138,10 @@ footer {
 	color: #999;
 	font-size: 9px;
 	margin-left: 5px;
+}
+.subHeading {
+	font-size: 18px;
+	font-weight: 500;
+	display: block;
+	margin-bottom: 5px;
 }
