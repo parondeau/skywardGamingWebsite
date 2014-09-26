@@ -17,6 +17,7 @@ strong {
 	background-size: 400px;
 	background-color: rgb(32,32,32);
 	margin: -20px -20px 0;
+	cursor: pointer;
 }
 footer {
 	position: absolute;
@@ -144,4 +145,7 @@ hr {
 	font-weight: 500;
 	display: block;
 	margin-bottom: 5px;
+}
+nav a{
+	cursor: pointer;
 }
