@@ -29,6 +29,11 @@ $(function() {
 		$("#playSection").addClass("show");
 		window.location.href = '#play';
 	}
+	function navigateHowToPlay(){
+		navExtras();
+		$("#howToPlaySection").addClass("show");
+		window.location.href = '#howToPlay';
+	}
 	function navigateContact(){
 		navExtras();
 		$("#contactSection").addClass("show");
@@ -55,6 +60,9 @@ $(function() {
 					break;
 				case 'play':
 					navigatePlay();
+					break;
+				case 'howToPlay':
+					navigateHowToPlay();
 					break;
 				case 'contact':
 					navigateContact();
@@ -85,6 +93,9 @@ $(function() {
 		});
 		$("#navPlay").on("click", function(){
 			navigatePlay();
+		});
+		$("#navHowToPlay").on("click", function(){
+			navigateHowToPlay();
 		});
 		$("#navContact").on("click", function(){
 			navigateContact();

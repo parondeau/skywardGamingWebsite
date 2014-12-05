@@ -149,3 +149,7 @@ hr {
 nav a{
 	cursor: pointer;
 }
+#howToPlaySection iframe {
+	display: block;
+	margin: 0 auto;
+}
