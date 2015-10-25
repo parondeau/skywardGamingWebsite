@@ -3,66 +3,48 @@ $(function() {
 	window.onpopstate = function() {
 		checkNav();
 		checkURL();
-	}
-	function navigateHome(){
+	};
+
+	function navigateHome() {
 		navExtras();
 		$("#mainSection").addClass("show");
 		window.location.href = '#home';
 	}
-	function navigateRules(){
+
+	function navigateStory() {
 		navExtras();
-		$("#rulesSection").addClass("show");
-		window.location.href = '#rules';
+		$("#storySection").addClass("show");
+		window.location.href = '#story';
 	}
-	function navigateOdds(){
+
+	function navigateGames() {
 		navExtras();
-		$("#oddsSection").addClass("show");
-		window.location.href = '#odds';
+		$("#gamesSection").addClass("show");
+		window.location.href = '#games';
 	}
-	function navigateHistory(){
-		navExtras();
-		$("#historySection").addClass("show");
-		window.location.href = '#history';
-	}
-	function navigatePlay(){
-		navExtras();
-		$("#playSection").addClass("show");
-		window.location.href = '#play';
-	}
-	function navigateHowToPlay(){
-		navExtras();
-		$("#howToPlaySection").addClass("show");
-		window.location.href = '#howToPlay';
-	}
-	function navigateContact(){
+
+	function navigateContact() {
 		navExtras();
 		$("#contactSection").addClass("show");
 		window.location.href = '#contact';
 	}
-	function navExtras(){
+
+	function navExtras() {
 		document.body.scrollTop = 0;
 		$(".mainBody > *").removeClass("show");
 	}
-	function checkURL(){
+
+	function checkURL() {
 		url = window.location.hash;
 		url = url.replace(/^\#/,'');
 		if (url !== urlHash){
 			urlHash = url;
 			switch (url){
-				case 'rules':
-					navigateRules();
+				case 'story':
+					navigateStory();
 					break;
-				case 'odds':
-					navigateOdds();
-					break;
-				case 'history':
-					navigateHistory();
-					break;
-				case 'play':
-					navigatePlay();
-					break;
-				case 'howToPlay':
-					navigateHowToPlay();
+				case 'games':
+					navigateGames();
 					break;
 				case 'contact':
 					navigateContact();
@@ -73,46 +55,33 @@ $(function() {
 			}
 		}
 	}
-	function checkNav(){
-		if ($(".navbar-toggle").hasClass("collapsed") != true ){
+
+	function checkNav() {
+		if ($(".navbar-toggle").hasClass("collapsed") !== true ) {
 			$(".navbar-toggle").trigger("click");
 		}
 	}
-	function setupClick(){
-		$("#navHome").on("click", function(){
-			navigateHome();
-		});
-		$("#navRules").on("click", function(){
-			navigateRules();
-		});
-		$("#navOdds").on("click", function(){
-			navigateOdds();
-		});
-		$("#navStory").on("click", function(){
-			navigateHistory();
-		});
-		$("#navPlay").on("click", function(){
-			navigatePlay();
-		});
-		$("#navHowToPlay").on("click", function(){
-			navigateHowToPlay();
-		});
-		$("#navContact").on("click", function(){
-			navigateContact();
-		});
-		$(".business-header").on("click", function(){
-			navigateRules();
-		});
-		$("#mainRulesSection").on("click", function(){
-			navigateRules();
-		});
-		$("#mainOddsSection").on("click", function(){
-			navigateOdds();
-		});
-		$("#mainHistorySection").on("click", function(){
-			navigateHistory();
+
+	function setupClick() {
+		$("nav a, #descriptions > div").on("click", nav);
+		$(".gamesBox > div").on("click", function(e) {
+			window.location.href = $(e.target).closest(".game")[0].id + ".html";
 		});
 	}
+
+	function nav(e) {
+		var target = $(e.target).closest(".nav_item")[0].classList;
+		if (target.contains("nav_story")) {
+			navigateStory();
+		} else if (target.contains("nav_games")) {
+			navigateGames();
+		} else if (target.contains("nav_contact")) {
+			navigateContact();
+		} else {
+			navigateHome();
+		}
+	}
+
 	setupClick();
 	checkURL();
 });
