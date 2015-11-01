@@ -147,6 +147,13 @@ nav a {
 	justify-content: space-around;
 	padding: 20px;
 }
+#skywardSection {
+	height: 290px;
+	background-image: url(../images/skywardLogo_2.png);
+	background-repeat: no-repeat;
+	background-size: 240px;
+	background-position: 0px 42px;
+}
 
 .gamesBox > div {
 	height: 200px;
