@@ -3,7 +3,8 @@ $(function() {
 	window.onpopstate = function() {
 		checkNav();
 		checkURL();
-	}
+	};
+
 	function navigateHome(){
 		navExtras();
 		$("#mainSection").addClass("show");
@@ -74,44 +75,18 @@ $(function() {
 		}
 	}
 	function checkNav(){
-		if ($(".navbar-toggle").hasClass("collapsed") != true ){
+		if ($(".navbar-toggle").hasClass("collapsed") !== true ) {
 			$(".navbar-toggle").trigger("click");
 		}
 	}
 	function setupClick(){
-		$("#navHome").on("click", function(){
-			navigateHome();
-		});
-		$("#navRules").on("click", function(){
-			navigateRules();
-		});
-		$("#navOdds").on("click", function(){
-			navigateOdds();
-		});
-		$("#navStory").on("click", function(){
-			navigateHistory();
-		});
-		$("#navPlay").on("click", function(){
-			navigatePlay();
-		});
-		$("#navHowToPlay").on("click", function(){
-			navigateHowToPlay();
-		});
-		$("#navContact").on("click", function(){
-			navigateContact();
-		});
-		$(".business-header").on("click", function(){
-			navigateRules();
-		});
-		$("#mainRulesSection").on("click", function(){
-			navigateRules();
-		});
-		$("#mainOddsSection").on("click", function(){
-			navigateOdds();
-		});
-		$("#mainHistorySection").on("click", function(){
-			navigateHistory();
-		});
+		$("#navHome").on("click", navigateHome);
+		$("#navRules, #mainRulesSection, .business-header").on("click", navigateRules);
+		$("#navOdds, #mainOddsSection").on("click", navigateOdds);
+		$("#navStory, #mainHistorySection").on("click", navigateHistory);
+		$("#navPlay, #mainPlaySection").on("click", navigatePlay);
+		$("#navHowToPlay").on("click", navigateHowToPlay);
+		$("#navContact").on("click", navigateContact);
 	}
 	setupClick();
 	checkURL();

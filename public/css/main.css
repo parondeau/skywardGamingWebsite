@@ -36,6 +36,7 @@ footer {
 
 #descriptions {
 	text-align: center;
+	margin-top: 20px;
 }
 
 #descriptions > * {
@@ -48,6 +49,9 @@ footer {
 	background: #333;
 	color: #aaa;
 	border-radius: 4px;
+}
+#descriptions > *:hover h2 {
+	color: #eee;
 }
 
 .mainBody > div {
@@ -68,7 +72,7 @@ footer {
 }
 
 .onaroll {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	color: crimson;
 }

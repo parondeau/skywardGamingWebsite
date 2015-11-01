@@ -19,6 +19,12 @@ strong {
 	margin: -20px -20px 0;
 	cursor: pointer;
 }
+.business-header.bjbe {
+	background-image: none;
+}
+.business-header.scw {
+	background-image: none;
+}
 footer {
 	position: absolute;
 	bottom: 0;
@@ -52,6 +58,9 @@ hr {
 	color: #aaa;
 	border-radius: 4px;
 }
+#descriptions > *:hover h2 {
+	color: #eee;
+}
 .mainBody > * {
 	display: none;
 	padding: 20px;
@@ -66,7 +75,7 @@ hr {
 	margin: 0;
 }
 .onaroll {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	color: crimson;
 }
@@ -74,7 +83,7 @@ hr {
 	color: crimson;
 }
 #mainSlogan {
-	font-size: 44px;
+	font-size: 34px;
 	text-align: center;
 }
 .nil {
@@ -167,4 +176,11 @@ nav a{
 	height: 40px;
 	margin-right: 15px;
 	width: 40px;
+}
+.table-bordered {
+	margin: 40px auto;
+	max-width: 50%;
+}
+ol {
+	list-style-type: lower-roman;
 }
