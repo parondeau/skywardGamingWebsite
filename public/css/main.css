@@ -141,10 +141,12 @@ nav a {
 	-webkit-flex-direction: row;
 	-webkit-align-items: center;
 	-webkit-justify-content: space-around;
+	-webkit-flex-wrap: wrap;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	padding: 20px;
 }
 #skywardSection {
@@ -159,15 +161,25 @@ nav a {
 	height: 200px;
 	width: 200px;
 	cursor: pointer;
-	background-color: rgb(32,32,32);
+	background-color: white;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 90%;
+	margin: 20px;
 }
 
 .gamesBox > div:hover {
 }
 
 #onaroll {
-	background-image: url(../images/onARollLogo_new_black.jpg);
+	background-image: url("../images/onARollLogo_new.png");
+	background-size: 100%;
+}
+
+#blackjackbullseye {
+	background-image: url("../images/BJBE_logo.png");
+}
+
+#secondchancewar {
+	background-image: url("../images/2ndChanceLogo.png");
 }

@@ -13,17 +13,20 @@ strong {
 }
 .business-header {
 	height: 400px;
-	background: url(../images/onARollLogo_new_black.jpg) center center no-repeat;
+	background: url("../images/onARollLogo_new_black.jpg") center center no-repeat;
 	background-size: 400px;
 	background-color: rgb(32,32,32);
 	margin: -20px -20px 0;
 	cursor: pointer;
 }
 .business-header.bjbe {
-	background-image: none;
+	background-image: url("../images/BJBE_logo.png");
+	background-color: white;
+	background-size: 350px;
 }
 .business-header.scw {
-	background-image: none;
+	background-image: url("../images/2ndChanceLogo.png");
+	background-color: white;
 }
 footer {
 	position: absolute;
