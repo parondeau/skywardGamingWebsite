@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "parondeau"
+  },
+  "targets": {
+    "parondeau": {
+      "hosting": {
+        "skywardgaming": [
+          "skywardgaming"
+        ]
+      }
+    }
+  }
+}
