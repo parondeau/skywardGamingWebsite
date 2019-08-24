@@ -28,6 +28,10 @@ strong {
 	background-image: url("../images/2ndChanceLogo.png");
 	background-color: white;
 }
+.business-header.hht {
+	background-image: url("../images/happyhourtower_logo.png");
+	background-color: white;
+}
 footer {
 	position: absolute;
 	bottom: 0;

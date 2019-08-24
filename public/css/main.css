@@ -4,6 +4,7 @@ body {
 	position: relative;
 	min-height: 100%;
 }
+
 .nav {
 	font-size: 14px;
 }
@@ -37,6 +38,16 @@ footer {
 #descriptions {
 	text-align: center;
 	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.happy-hour-tower-description {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 70%;
+	margin: auto;
 }
 
 #descriptions > * {
@@ -168,9 +179,6 @@ nav a {
 	margin: 20px;
 }
 
-.gamesBox > div:hover {
-}
-
 #onaroll {
 	background-image: url("../images/onARollLogo_new.png");
 	background-size: 100%;
@@ -182,4 +190,21 @@ nav a {
 
 #secondchancewar {
 	background-image: url("../images/2ndChanceLogo.png");
+}
+
+#happyhourtower {
+	background-image: url("../images/happyhourtower_logo.png")
+}
+
+.dice-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.dice-container > * {
+	width: 100px;
 }

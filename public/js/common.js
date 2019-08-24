@@ -82,10 +82,12 @@ $(function() {
 	function setupClick(){
 		$("#navHome").on("click", navigateHome);
 		$("#navRules, #mainRulesSection, .business-header").on("click", navigateRules);
+		$(".navRules").on("click", navigateRules);
 		$("#navOdds, #mainOddsSection").on("click", navigateOdds);
 		$("#navStory, #mainHistorySection").on("click", navigateHistory);
 		$("#navPlay, #mainPlaySection").on("click", navigatePlay);
 		$("#navHowToPlay").on("click", navigateHowToPlay);
+		$(".navHowToPlay").on("click", navigateHowToPlay);
 		$("#navContact").on("click", navigateContact);
 	}
 	setupClick();
