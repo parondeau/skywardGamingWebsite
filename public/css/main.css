@@ -42,7 +42,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.happy-hour-tower-description {
+.best-party-game-ever-description {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -192,8 +192,8 @@ nav a {
   background-image: url("../images/2ndChanceLogo.png");
 }
 
-#happyhourtower {
-  background-image: url("../images/happyhourtower_logo.png");
+#best-party-game-ever {
+  background-image: url("../images/best-party-game-ever-logo.png");
 }
 
 .dice-container {
